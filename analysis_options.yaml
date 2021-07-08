@@ -1,0 +1,12 @@
+include: package:carapacik_lints/core.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+    - lib/src/core/localization/generated/**

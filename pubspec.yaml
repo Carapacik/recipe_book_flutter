@@ -1,0 +1,42 @@
+name: recipe_book_flutter
+description: A responsive, cross-platform recipe book client.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+  flutter: '>=3.47.0'
+
+dependencies:
+  dio: ^5.11.0
+  file_selector: ^1.1.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  intl: any
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  carapacik_lints: ^3.13.1
+  flutter_test:
+    sdk: flutter
+  intl_utils: ^2.8.16
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+
+flutter_intl:
+  enabled: true
+  main_locale: ru
+  class_name: AppLocalizations
+  arb_dir: lib/src/core/localization/translations
+  output_dir: lib/src/core/localization/generated
